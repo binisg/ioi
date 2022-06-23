@@ -1,0 +1,17 @@
+10
+1 Bessie +1000
+2 Elsie +1000
+3 Mildred +500
+10 Mildred +493
+11 Bessie -1
+20 Elsie -7
+25 Bessie -6
+35 Bessie +10
+45 Mildred -500
+50 Elsie -459
+
+Bessie = 1000
+Elsie = 1000
+Mildred = 1000
+
+changes = 4
