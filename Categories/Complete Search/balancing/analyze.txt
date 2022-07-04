@@ -1,0 +1,55 @@
+SOLUTION:
+
+Αυτό που κάνω είναι να ψάχνω σε κάθε συνδυασμό div_y από το 2 μέχρι μικρότερο ή ίσο του B
+Σε κάθε div_y ψάχνω και το div_x που χωρίζει το ταμπλό και οριζόντια, το οποίο είναι μικρότερο του B
+Το μικρότερο result (μεγαλύτερες αγελάδες σε κάθε τετράγωνο) από τις περιπτώσεις είναι και το τελικό αποτέλεσμα
+
+100x100 max
+
+    o  o        o
+  o  o    o    o
+   o o o        o 
+    o o o o  o   o
+  o  o   o   o
+o  o              o
+
+divide in x and y as a + sign
+
+n^2
+
+7 10
+7 3
+5 5
+9 7
+3 1
+7 7
+5 3
+9 1
+
+x:
+
+3 1
+5 3
+5 5
+7 3
+7 7
+9 1
+9 7
+
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+o o
+
+o   o
+
+
+
+      o
+
+
+
+  o
+
+  o o o
+
+        o
+ssssssssssssssssssssssssssssssss
