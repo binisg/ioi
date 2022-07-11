@@ -13,12 +13,12 @@ bool valid (vector<pi> &rules, vector<string> &names) {
     for (int i = 0; i < names.size(); i++) {
         for (int j = 0; j < rules.size(); j++) {
             if (rules[j].first == names[i]) {
-                if (j > 0 && names[j-1] == rules[j].second) continue;
-                else if (j < names.size()-1 && names[j+1] == rules[j].second) continue;
+                if (i > 0 && names[i-1] == rules[j].second) continue;
+                else if (i < names.size()-1 && names[i+1] == rules[j].second) continue;
                 else return false;
             } else if (rules[j].second == names[i]) {
-                if (j > 0 && names[j-1] == rules[j].first) continue;
-                else if (j < names.size()-1 && names[j+1] == rules[j].first) continue;
+                if (i > 0 && names[i-1] == rules[j].first) continue;
+                else if (i < names.size()-1 && names[i+1] == rules[j].first) continue;
                 else return false;
             }
         }
@@ -46,20 +46,12 @@ int main() {
     }
 
     do {
-        for (pi v: rules) {
-            cout << v.first << " " << v.second << endl;
-        }
-        cout << endl;
-        for (string s: names) {
-            cout << s << endl;
-        }
-        cout << endl;
         if (valid(rules, names)) {
             for (string s: names) {
-                cout << s << "\n";
+                out << s << "\n";
             }
             return 0;
-        }
+        } 
     } while (next_permutation(names.begin(), names.end()));
 
     return 0;
