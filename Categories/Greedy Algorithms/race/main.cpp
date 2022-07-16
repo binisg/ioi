@@ -1,5 +1,3 @@
-// to_be_solved
-
 #include <iostream>
 #include <cstdio>
 #include <vector>
@@ -14,14 +12,39 @@ int solve(int limit) {
         sum += i;
         i++;
     }
-    int counter = i-1;
+    int counter = i-1, end = i-1;
     if (sum >= K) return counter;
 
-    int small_k = K - (i-1);
-    small_k--;
-    int result = i + calc(small_k);
+    int c = 0, p = 0;
 
-    return 0;
+    while (true) {
+        if (sum + (temp * 2) + i < K) {
+            c++;
+            temp += i;
+            i++;
+        } else if (sum + (temp * 2) < K) {
+            sum += (i-1);
+            p++;
+        } else {
+            temp -= (i-1);
+            sum += (temp*2);
+            temp += (i-1);
+            sum += (i-1);
+            c--;
+            c *= 2;
+            c++;
+            break;
+        }
+    }
+
+    counter += c;
+    counter += p;
+    while (sum < K) {
+        sum += end;
+        counter++;
+    }
+
+    return counter;
 }
 
 int main() {
@@ -37,7 +60,8 @@ int main() {
     }
 
     for (int i = 0; i < N; i++) {
-        cout << solve(arr[i]) << endl;
+        int res = solve(arr[i]);
+        fprintf(out, "%d\n", res);
     }
 
     return 0;
