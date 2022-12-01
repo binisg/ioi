@@ -1,0 +1,42 @@
+RECTANGLE GEOMETRY (2/4)
+
+Square Pasture
+Blocked Billboard II
+
+SIMULATION (9/13)
+
+The Cow-Signal
+Speeding
+The Lost Cow
+The Bovine Shuffle
+The Bucket List
+Measuring Traffic
+Block Game
+Milk Measurement
+Stuck in a Rut
+
+DFS (8/19)
+
+Closing The Farm
+Moocast
+Fence Planning
+Birthday Party
+Rank
+Flight Routes Check
+Moocast
+Connected Components?
+
+FLOOD FILL (2/13)
+
+Icy Perimeter
+Cross Country Skiing
+
+DYNAMIC PROGRAMMING (2/?)
+
+Mortal Kombat Tower
+Time is Mooney
+
+DIVISIBILITY (2/?)
+
+Div Game
+Common Divisors

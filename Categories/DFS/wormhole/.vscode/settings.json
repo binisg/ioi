@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "unordered_set": "cpp",
+        "random": "cpp",
+        "deque": "cpp",
+        "string": "cpp"
+    }
+}
